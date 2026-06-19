@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery.slim.3.7.1.js"></script>
+    <script src="js/jquery3.7.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>TriLingo</title>
+    <style>
+        body{
+         background-color:#f0f4ff;   
+        }
+         html{
+            scroll-behavior: smooth;
+        }
+       li a:hover{
+            color: #f0f4ff !important;
+            transition: 0.4s;
+        }
+        /* part1 */
+        .a1{
+            display: inline-block;
+            background-color: #f0f4ff;
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            left: 47%;
+            font-size: 15px;
+            max-width: 100px;
+            border-radius: 12px;
+            transform: translate(-37%);
+            width: 130px;
+        }
+          .a2{
+            display: inline-block;
+            background-color: #f0f4ff;
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            left: 27%;
+            font-size: 15px;
+            max-width: 100px;
+            border-radius: 12px;
+            transform: translate(-75%);
+            width: 130px;
+            
+        }
+               .a3{
+            display: inline-block;
+            background-color: #f0f4ff;
+            text-align: center;
+            position: absolute;
+            top: 40%;
+            left: 67%;
+            font-size: 15px;
+           max-width: 100px;
+            border-radius: 12px;
+            width: 130px;
+        }
+        .a4{
+            position: absolute;
+            top: 10%;
+            left: 5%;
+            font-size: 20px;
+            border-left: 6px solid #f59e0b;
+            padding: 10px;
+            display: inline-block;
+            
+        }
+        .a5{
+            position: absolute;
+            top: 80%;
+            left: 45%;
+            color: #f0f4ff;
+        transform: translate(-30%);
+        background-color: #f59e0b;
+        padding: 5px;
+        border-radius: 14px;
+    
+        }
+        /* part3 */
+        .hhh{
+            text-align: center;
+        }
+        .hh{
+            color: #1e3a5f;
+             text-align: center;
+             border: 2px solid #f59e0b;
+             display: inline-block;
+             padding: 5px ;
+             border-radius: 14px;
+            
+             
+        }
+        .b1{
+        background-color: #1e3a5f;
+        color: #ffffff;
+        text-align: center;
+        width: 230px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        padding: 20px;
+        border-radius: 14px;
+         display: inline-block;
+            margin: 10px;
+        }
+        .b2{
+        background-color: #1e3a5f;
+        color: #ffffff;
+        text-align: center;
+        width: 230px;
+        font-size: 16px;
+        padding: 20px;
+        border-radius: 14px;
+         display: inline-block; 
+         box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+         margin: 10px;
+        }
+      /* part4 */
+      .c1{
+        font-size: 15px;
+        display: inline-block;
+        background-color: #1e3a5f;
+        width: 200px;
+        color: #ffffff;
+        border-radius: 14px;
+        flex-wrap: wrap;
+        margin: 10px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      }
+      .c2{
+        font-size: 15px;
+        display: inline-block;
+        background-color: #1e3a5f;
+        width: 200px;
+        color: #ffffff;
+        border-radius: 14px;
+        flex-wrap: wrap;
+        margin: 10px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        
+      }
+      .c1 img{
+        border-radius: 14px;
+        
+      }
+      .c2 img{
+        border-radius: 14px;
+      }
+      /* part5 */
+             .s3{
+            color: #f3f4f7;
+            border: 2px solid #f59e0b;
+            display: inline-block;
+            width: 200px;
+            height: 250px;
+            background-color: #1e3a5f;
+            border-radius: 12px;
+            margin: 15px;
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.2);
+            font-size: 13px;
+            
+        }
+        ol{
+            text-align: center;
+            display: inline-block;
+        }
+       .s3:hover{
+        transform: translateY(-5px);
+       }
+        .bot button{
+            background-color:#f59e0b;
+            border-radius: 12px;
+            padding: 8px 20px;
+            width: auto;
+            cursor: pointer;
+        }
+        .bot:hover{
+            transform: translateY(-1px);
+        }
+        footer{
+            font-size: 15px;
+            background-color: #1e3a5f;
+            color: #f3f4f7;
+            text-align: center;
+            border-radius: 14px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+   <div>
+        <nav class="navbar navbar-expand-sm  rounded d-flex justify-content-between" style="background-color: #1e3a5f; ">
+            <h1 style="font-size: clamp(25px,4vw,35px); color: #ffffff; ">TriLingo</h1>
+            <div class=" rounded">
+                <ul class="navbar-nav d-flex flex-row" style="font-size: clamp(10px,3vw,18px);">
+                    <li class="nav-item mx-2"> <a class="nav-link" href="#e1" style="color: #f59e0b">start</a> </li>
+                    <li class="nav-item mx-2"> <a class="nav-link" href="#e2" style="color: #f59e0b">languages</a> </li>
+                    <li class="nav-item mx-2"> <a class="nav-link" href="#e3" style="color: #f59e0b">teachers</a> </li>
+                    <li class="nav-item mx-2"> <a class="nav-link" href="#e4" style="color: #f59e0b">pricing</a> </li>
+                </ul>
+        </nav>
+    </div>
+    </div> <br>
+    <div style="position: relative;">
+        <img src="images/5881975205733797507.jpg" alt="" width="100%" height="450px" style="border-radius: 14px; border: 2px solid bisque;">
+        <div>
+            <div class="a4"><h1 style="color: #ffffff; font-size: clamp(20px,4vw,35px); " id="e1">TriLingo</h1>
+            <p style="color: #f59e0b;">new language,new life
+            </p>
+            
+            </div>
+            <div class="a1"> 
+                <h2 style="color: #f59e0b;">SA</h2>
+                <p>Arabic <br> العربية</p>
+                
+            </div>
+              <div class="a2"> 
+                <h2 style="color: #f59e0b;">GB</h2>
+                <p>English <br> English </p>
+                
+            </div>
+             
+              <div class="a3"> 
+                <h2 style="color: #f59e0b;">CH</h2>
+                <p >Chinese <br> 中文</p>
+                
+            </div>
+            <div class="a5" >
+            <h2 style="font-size: clamp(20px,4vw,35px);">join to learn more</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="hhh">
+    <h1 class="hh" id="e2">languages</h1>
+    </div>
+    <br>
+    <div class="text-center">
+    <div class="b1">
+        <h2 style="color: #2563eb;">Arabic</h2>
+        <ul>
+            <li>Learn Modern Standard Arabic.</li>
+            <li>Master reading & writing.</li>
+            <li>Focus on grammar & conversation.</li>
+            <li>Certificate upon completion.</li>
+        </ul>
+    
+       
+
+    </div>
+      <div class="b2">
+         <h2 style="color: #2563eb;">chinese</h2>
+        <ul>
+            <li>Mandarin from scratch.</li>
+            <li>HSK exam preparation.</li>
+            <li>Speaking, tones & characters.</li>  
+            <li>Certificate upon completion.</li>   
+           </ul>
+    </div>
+    <div class="b1">
+         <h2 style="color: #2563eb;">English</h2>
+        <ul>
+            <li>Business & Academic English.</li>
+            <li>Grammar, writing & speaking.</li>
+            <li>IELTS & TOEFL preparation.</li>  
+            <li>Certificate upon completion.</li>   
+           </ul>
+    </div>
+   
+    </div>
+    <br>
+    <!--  -->
+    <div class="hhh">
+    <h1 class="hh" id="e3">Teachers</h1>
+    </div>
+    <br>
+    <div style="text-align: center;">
+    <div class="c1">
+        <img src="images/5881975205733797495.jpg" alt="" width="200px" height="250px" >
+        <h3 style="font-size: 17px; text-align: center; color: #f59e0b;"> Ahmed Hassan — Arabic</h3>
+        <ul>
+            <li>10+ years teaching Arabic.</li>
+            <li>Certified Arabic linguist.</li>
+            <li>Taught 500+ students.</li>
+        </ul>
+    </div>
+    <div class="c1">
+        <img src="images/5881975205733797496.jpg" alt="" width="200px" height="250px">
+        <h3 style="font-size: 17px; text-align: center; color: #f59e0b;">Sarah Mitchell — English</h3>
+        <ul>
+            <li>Native English speaker.</li>
+            <li>Cambridge certified teacher.</li>
+            <li>8+ years experience.</li>
+        </ul>
+    </div>
+    <div class="c2"><img src="images/5881975205733797497.jpg" alt="" width="200px" height="248px">
+    <h3 style="font-size: 19px; text-align: center; color: #f59e0b;">Li Wei — Chinese</h3>
+    <ul>
+        <li>Native Mandarin speaker.</li>
+        <li>HSK examiner.</li>
+        <li>7+ years experience.</li>
+    </ul>
+    </div>
+    </div>
+    <br>
+    <!--  -->
+     <div class="hhh">
+    <h1 class="hh" id="e4">pricing</h1>
+    </div>
+    <br>
+       <section class="text-center container table p-1" id="a2">
+       
+        <br>
+     <div class="s3">
+        <h4>Beginner</h4>
+        <h1 style="font-size: 15px; color: #f59e0b;">$49/month</h1>
+        <ol>
+            <li>1 language of your choice</li>
+            <li>2 classes per week</li>
+            <li>Basic study materials</li>
+            <li>Community access</li>
+        </ol><br>
+        <div class="bot">
+        <button >join now</button>
+        </div>
+     </div>
+    
+     <div class="s3" style=" padding: 5px 0 5px 0;">
+        <h4 style="color: #f59e0b;">Intermediate </h4>
+        <h1 style="font-size: 15px; color: #f59e0b;"> $89/month</h1>
+        <ol>
+            <li>2 languages of your choice</li>
+            <li>4 classes per week</li>
+            <li>Full study materials</li>
+            <li>1-on-1 session monthly</li>
+        </ol> <br>
+        <div class="bot">
+        <button >join now</button>
+        </div>
+     </div>
+      <div class="s3">
+        <h4 class="text-warning">Pro </h4>
+        <h1 style="font-size: 15px; color: #f59e0b;"> $149/month</h1>
+        <ol>
+            <li>All 3 languages</li>
+            <li>Daily classes</li>
+            <li>Premium materials</li>
+            <li>Weekly 1-on-1 sessions</li>
+        </ol> <br>
+        <div class="bot">
+        <button >join now</button>
+        </div>
+     </div>
+     </section>
+     <br><br>
+     <footer>
+    <h3>TriLingo</h3>
+    <p>Master Arabic · English · Chinese</p>
+    
+    <p>📧 contact@trilingo.com</p>
+    <p>📞 +1 (555) 123-4567</p>
+    
+    <p style="color: #64748b; font-size: 14px;">© 2025 TriLingo — All rights reserved</p>
+</footer>
+</body>
+</html>
